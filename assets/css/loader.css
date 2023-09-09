@@ -1,0 +1,43 @@
+.loader {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #000;
+    width: 100%;
+    z-index: 998;
+    overflow: hidden;
+}
+
+  .loader span {
+    width: 20px;
+    height: 20px;
+    background-color: #FFBC5E;
+    margin-right: 20px;
+    border-radius: 12px;
+    animation: load 2s infinite;
+    transition: 0.3s ease;
+  }
+  
+  @keyframes load {
+    0% {
+      transform: scale(0);
+    }
+    50% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(0);
+    }
+  }
+  
+  .loader span:nth-child(2) {
+    animation-delay: 0.2s;
+  }
+  .loader span:nth-child(3) {
+    animation-delay: 0.4s;
+    margin-right: 0;
+  }
